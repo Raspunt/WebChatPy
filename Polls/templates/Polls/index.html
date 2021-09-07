@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'Polls/style_index.css' %}">
+
+
+    <title>Chat lite</title>
+</head>
+
+<body>
+
+    <div class="container p-5 ">
+
+ 
+        <div class="bg-warning ">
+
+
+
+            <div class=" p-2">
+
+
+                <div class="chatPlace  "> 
+                
+                </div>
+
+            </div>
+
+            <form class="p-3" action="" method="post">
+                {% csrf_token %}
+                <input name="name" value="" class="form-control" placeholder="Enter your name">
+                <input name="textInput" value="" class="form-control" placeholder="Enter message">
+                <button type="submit" class="btn btn-primary col">Send</button>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+
+
+        id_array = []
+        // setInterval(function() {
+        
+        //     $.getJSON('/messages', function(data) {    
+
+                
+        //         jsonMessages = data["messages"];
+ 
+
+        //         for (i= 0 ;i< jsonMessages.length;++i){
+        //             // text = jsonMessages[i]["TEXT"] 
+        //             // username = jsonMessages[i]["USERNAME"]
+        //             // id = jsonMessages[i]["ID"]
+
+        //             console.log();
+
+        //             // if (!id_array.includes(id)){
+        //             //     id_array.push(id)
+        //             //     $('.chatPlace').append(`<h3 class = "message bg-secondary p-2 m-3">${username}: ${text} </h3>`)
+    
+        //             // }
+
+
+        //         }
+            
+        //     });
+
+
+            
+
+        // },2000);
+
+
+        
+        
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
