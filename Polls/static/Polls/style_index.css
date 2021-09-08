@@ -9,8 +9,16 @@ body{
 
 .sidebar{
     position: absolute;
-    padding: 2%;
+
     height: 100%;
+
+
+}
+
+.sidebarIcons{
+
+   padding:20px;
+
 
 
 }
