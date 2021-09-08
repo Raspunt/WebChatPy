@@ -3,18 +3,26 @@
 
 <head>
     {% load static %}
+
+    {% block head %}
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/x-scss" href="node_modules/font-awesome-animation.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'Polls/style_index.css' %}">
 
+    {% endblock %}
 
-    <title>Chat lite</title>
+    <title>    
+        {% block title %}
+            Chat lite
+        {% endblock %}
+    </title>
+    
 </head>
 
 <body>
@@ -27,7 +35,11 @@
             
             {% for chat in chats %}
             <hr>
-            <i type="button"  class="animated-hover p-3 fas fa-comment-dots"></i>
+            
+            <a href="chats/{{ chat.id }}" class="text-dark">
+                <i  type="button"  class=" p-3 fas fa-comment-dots"></i>
+            </a>
+            
             <hr>
      
 
@@ -38,6 +50,7 @@
 
     </div>
 
+   
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -78,10 +91,6 @@
         </div>
       </div>
 
-
-
-
-
     <div class="container p-5 ">
 
  
@@ -93,7 +102,11 @@
 
 
                 <div class="chatPlace  "> 
+                    
+                {% block content %}
                 
+                {% endblock %}
+
                 </div>
 
             </div>
@@ -160,6 +173,7 @@
 
 
     </script>
+
 
 
 </body>

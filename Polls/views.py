@@ -1,6 +1,6 @@
 from typing import Text
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, request
 from . models import Chats,Messages
 from datetime import datetime
 from django.core import serializers
@@ -39,8 +39,6 @@ def StartPage(request):
     return render(request,"Polls/index.html",
     {
         "chats":chats,
-
-
     })
 
 
@@ -60,4 +58,30 @@ def ReturnJson(request):
     
 
 
+
+def ChatsPage(request,chat_id):
+
+    chat = Chats.objects.get(id=chat_id)
+    
+    # get many to many from db
+    chatMesages = chat.messages.all()
+
+
+    if request.method == "POST":
+        message_text = request.POST.get("textInput")
+        message_name = request.POST.get("name")
+
+        if message_name != None and message_text != None:
+            message = Messages.objects.create(username=message_name,text=message_text,date=datetime.now)
+            chat.messages.add(message)
+
+
+
+    return render(request,"Polls/chats.html",
+    {
+
+        "chat":chat,
+        "messages":chatMesages
+
+    })
 

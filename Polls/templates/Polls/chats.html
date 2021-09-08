@@ -1,0 +1,26 @@
+{% extends 'Polls/index.html'  %}
+
+
+
+
+
+{% block title %}
+
+    {{ chat.title }}
+
+{% endblock %}
+
+
+
+
+
+{% block content %}
+
+    {% for message  in messages %}
+
+    <h3 class="bg-secondary p-3">{{ message.username }}:{{ message.text }} </h3>
+
+    {% endfor %}
+
+
+{% endblock %}
