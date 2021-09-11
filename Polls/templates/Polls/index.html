@@ -33,6 +33,9 @@
         <div class=" bg-danger sidebar">
             
             <i type="button" class=" p-3  fas fa-plus" data-toggle="modal" data-target="#exampleModal"></i>
+          
+            
+
             
             {% for chat in chats %}
             <hr>
@@ -105,20 +108,32 @@
                 <div class="chatPlace  "> 
                     
                 {% block content %}
-                
+
+
+                    {% if messages %}
+                    
+                        {% for message in messages %}
+
+                            <div class ="bg-danger text-center p-4 m-4">
+                                <h1>{{ message }}</h1>  
+                            </div>
+
+                        {% endfor %}
+
+
+
+                    {% endif %}
+
+                                
+                    <h3 class="text-center">Wellcome WebChatPy</h3>
+                    <p>чтобы создать чат нажмите  на плюс или нажмите на чат чтобы присойдиница к ниму</p>
+
                 {% endblock %}
 
                 </div>
 
             </div>
-
-            <form class="p-3" action="" method="post">
-                {% csrf_token %}
-                <input name="name" value="" class="form-control" placeholder="Enter your name">
-                <input name="textInput" value="" class="form-control" placeholder="Enter message">
-                <button type="submit" class="btn btn-primary col">Send</button>
-            </form>
-
+        
         </div>
 
     </div>
