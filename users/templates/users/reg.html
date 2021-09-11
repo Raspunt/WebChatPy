@@ -16,7 +16,18 @@
 
 <form action="" method="post">
 
+    {% csrf_token %}
+
+  
+
         <div class = "  reg_con" >
+
+            {% if error != "" %}
+    
+            <div class = "bg-danger p-4">{{ error }} </div> 
+         
+            {% endif %} 
+
             
             <div class="form-group">
                 <label for="exampleInputPassword1">username</label>

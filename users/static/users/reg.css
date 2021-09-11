@@ -15,7 +15,25 @@
 
 }
 
+@media only screen and (max-width: 1000px) {
+
+    .reg_con{
+        margin-left: 10%;
+        margin-right: 10%;
+    
+    }
+
+
+}
+
+
 .reg_button {
     margin-top: 10px;
     
+}
+
+body{
+
+    background-color: brown ;
+
 }
