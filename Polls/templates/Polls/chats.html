@@ -16,20 +16,35 @@
 
 {% block content %}
 
+    <h3 class="float-right mr-2">{{ request.user }}</h3>
+
+    <h1 class="text-center">Чат: {{ chat.title|truncatechars:50  }} </h1>
+
+    <hr>
+
+
+    {% if messages  %}
+
+     <h1 class = "text-center">Нету сообщений  добавте свое первое сообщение</h1>
+
+    {% endif %}
     
 
     {% for message  in messages %}
 
-    <h3 class="bg-secondary p-3">{{ message.username }}:{{ message.text }} </h3>
-
+    <div class="bg-secondary p-3 m-2">    
+        <p>{{ message.username }}</p>
+        <h4 class="">{{ message.text }} </h4>
+    </div>
+        
     {% endfor %}
 
 
     <form class="p-3" action="" method="post">
         {% csrf_token %}
-        <h3>{{ request.user }}</h3>
-        <input name="textInput" value="" class="form-control" placeholder="Enter message">
-        <button type="submit" class="btn btn-primary col">Send</button>
+
+        <input name="textInput" value="" class="form-control "  placeholder="Enter message">
+
     </form>
 
 

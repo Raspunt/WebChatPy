@@ -10,7 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" type="text/x-scss" href="node_modules/font-awesome-animation.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'Polls/style_index.css' %}">
@@ -29,26 +28,32 @@
 <body>
 
     <div >
-
+        
+    <div class="scroll_sidebar">
         <div class=" bg-danger sidebar">
-            
-            <i type="button" class=" p-3  fas fa-plus" data-toggle="modal" data-target="#exampleModal"></i>
-          
-            
 
-            
-            {% for chat in chats %}
-            <hr>
-            
-            <a href="chats/{{ chat.id }}" class="text-dark">
-                <i  type="button"  class=" p-3 fas fa-comment-dots"></i>
-            </a>
-            
-            <hr>
-     
 
-            {% endfor %}
-            
+                
+                <div data-toggle="modal" data-target="#exampleModal" type="button" >
+                    <p class="p-3"> <i type="button" class=" fas fa-plus" ></i>create chat </p>
+                </div>
+                
+                
+                
+                
+                {% for chat in chats %}
+                <hr>
+                
+                <a href="/chats/{{ chat.id }}" class="text-dark">
+                    <p class="p-3"> <i  type="button"  class="  fas fa-comment-dots"></i> {{ chat.title|truncatechars:10  }}</p>
+                </a>
+                
+                <hr>
+                
+                
+                {% endfor %}
+                
+            </div>
             
         </div>
 
@@ -73,11 +78,10 @@
                 <div class="modal-body">
 
 
-                    <input type="hidden"  name="createChat" value="1">
                     
                     <div class="form-group">
                         <label for="exampleInputPassword1">Title</label>
-                        <input name="TitleChat" value=""  class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        <input name="TitleChat" value=""  class="form-control" id="exampleInputPassword1" placeholder="title chat">
                     </div>
 
                     <div class="form-group">

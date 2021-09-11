@@ -1,37 +1,36 @@
-from typing import Text
 from django.shortcuts import redirect, render
-from django.http import HttpResponse, request
 from . models import Chats,Messages
 from datetime import datetime
-from django.core import serializers
-from django.shortcuts import get_object_or_404
 from django.contrib import messages
 
 
 def StartPage(request):
 
+    # получаем информацию из базы данных
     chats = Chats.objects.all()
 
+    # проверяем это POST запрос
     if request.method == "POST":
 
-
-        create_chat = request.POST.get("createChat")
-        message_text = request.POST.get("textInput")
-        message_name = request.POST.get("name")
-
+        #  получаем информацию из Post запроса
         TitleChat = request.POST.get("TitleChat")
         DescChat = request.POST.get("DescChat")
-
-        print(create_chat == 1)
-
         
-        if message_name != None and message_text != None and create_chat == None:
-            if len(Chats.objects.all()) == 0:
-                Chats.objects.create(title="chat_1",disc="first_chat")
+        # берем username из запроса
+        name = request.user
 
-            Messages.objects.create(username=message_name,text=message_text,date=datetime.now)
+
+        # создание чата
+
+        # проверяем пользователь авторизован
+        if name != None and name != "" and  TitleChat != "" :
+            Chats.objects.create(title=TitleChat,disc=DescChat)
+        else:
+            return redirect('/login')
+
+    
         
-        if create_chat == "1" and TitleChat != None and DescChat != None:
+        if TitleChat != None:
             Chats.objects.create(title=TitleChat,disc=DescChat)
 
 
@@ -50,23 +49,34 @@ def StartPage(request):
 def ChatsPage(request,chat_id):
 
     try : 
-        chat = Chats.objects.get(pk=chat_id)
-        
+
+        # получаем информацию из базы данных
+        chat = Chats.objects.get(pk=chat_id) 
         chats = Chats.objects.all()
 
-        # get many to many from db
+        # берем сообшения(many to many) из чата
         chatMesages = chat.messages.all()
 
-
+        # проверяем это POST запрос
         if request.method == "POST":
+            
+            #  получаем информацию из Post запроса
             message_text = request.POST.get("textInput")
-            message_name = request.POST.get("name")
+            TitleChat = request.POST.get("TitleChat")
+            DescChat = request.POST.get("DescChat")
 
+            print(request.POST)
+
+            # создаем чат
+            if TitleChat != None :
+                Chats.objects.create(title=TitleChat,disc=DescChat)
+
+
+
+            # берем username из запроса
             name = request.user
-
-            if name != None and name != "":
-
-                if  message_text != None:
+            if name != None and name != "" :
+                if  message_text != "" and message_text != None: #  имя не пустое
                     message = Messages.objects.create(username=name,text=message_text,date=datetime.now)
                     chat.messages.add(message)
             else :
@@ -81,12 +91,14 @@ def ChatsPage(request,chat_id):
 
         })
 
-    except Chats.DoesNotExist:
+    except Chats.DoesNotExist: # зашита от гениев 
+        
+        # если пользователь в адресную строку напишет не сушествующий чат,
+        # его перекинет на главную страницу
 
         chats = Chats.objects.all()
         error = "чат не найден"
 
-    
         messages.add_message(request, messages.INFO,error)
 
 
