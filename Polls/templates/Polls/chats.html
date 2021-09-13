@@ -6,7 +6,7 @@
 
 {% block title %}
 
-    {{ chat.title }} - чат
+чат - {{ chat.title }} 
 
 {% endblock %}
 
@@ -23,7 +23,7 @@
     <hr>
 
 
-    {% if messages  %}
+    {% if messages == None %}
 
      <h1 class = "text-center">Нету сообщений  добавте свое первое сообщение</h1>
 

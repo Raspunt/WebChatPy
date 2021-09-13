@@ -9,15 +9,16 @@ body{
 
 .sidebar{
     position: relative;
-
     height: auto;
-
-
-
+    width: 150px;
+   
 }
 
 .scroll_sidebar{
+    position:absolute;
+    overflow-y: scroll;
     height: 100%;
+  
 }
 
 
