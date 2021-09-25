@@ -1,0 +1,319 @@
+{
+  "status": "done",
+  "assets": {
+    "img/logo.82b9c7a5.png": {
+      "name": "img/logo.82b9c7a5.png",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/img/logo.82b9c7a5.png",
+      "publicPath": "http://0.0.0.0:8080/img/logo.82b9c7a5.png"
+    },
+    "js/app.js": {
+      "name": "js/app.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/js/app.js",
+      "publicPath": "http://0.0.0.0:8080/js/app.js"
+    },
+    "index.html": {
+      "name": "index.html",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/index.html",
+      "publicPath": "http://0.0.0.0:8080/index.html"
+    },
+    "favicon.ico": {
+      "name": "favicon.ico",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/favicon.ico",
+      "publicPath": "http://0.0.0.0:8080/favicon.ico"
+    },
+    "app.c73e6d848f2b4feb5096.hot-update.js": {
+      "name": "app.c73e6d848f2b4feb5096.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.c73e6d848f2b4feb5096.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.c73e6d848f2b4feb5096.hot-update.js"
+    },
+    "c73e6d848f2b4feb5096.hot-update.json": {
+      "name": "c73e6d848f2b4feb5096.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/c73e6d848f2b4feb5096.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/c73e6d848f2b4feb5096.hot-update.json"
+    },
+    "2a457129567afaa05d14.hot-update.json": {
+      "name": "2a457129567afaa05d14.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/2a457129567afaa05d14.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/2a457129567afaa05d14.hot-update.json"
+    },
+    "3b5003a7f6552289ca72.hot-update.json": {
+      "name": "3b5003a7f6552289ca72.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/3b5003a7f6552289ca72.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/3b5003a7f6552289ca72.hot-update.json"
+    },
+    "app.c257bb36ccbc9eb2b3c0.hot-update.js": {
+      "name": "app.c257bb36ccbc9eb2b3c0.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.c257bb36ccbc9eb2b3c0.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.c257bb36ccbc9eb2b3c0.hot-update.js"
+    },
+    "c257bb36ccbc9eb2b3c0.hot-update.json": {
+      "name": "c257bb36ccbc9eb2b3c0.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/c257bb36ccbc9eb2b3c0.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/c257bb36ccbc9eb2b3c0.hot-update.json"
+    },
+    "88984a2d63aaebad7d8d.hot-update.json": {
+      "name": "88984a2d63aaebad7d8d.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/88984a2d63aaebad7d8d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/88984a2d63aaebad7d8d.hot-update.json"
+    },
+    "app.5d0a823aa8d10f3430c3.hot-update.js": {
+      "name": "app.5d0a823aa8d10f3430c3.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.5d0a823aa8d10f3430c3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.5d0a823aa8d10f3430c3.hot-update.js"
+    },
+    "5d0a823aa8d10f3430c3.hot-update.json": {
+      "name": "5d0a823aa8d10f3430c3.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/5d0a823aa8d10f3430c3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/5d0a823aa8d10f3430c3.hot-update.json"
+    },
+    "app.9e4e5491829371e71160.hot-update.js": {
+      "name": "app.9e4e5491829371e71160.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.9e4e5491829371e71160.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.9e4e5491829371e71160.hot-update.js"
+    },
+    "9e4e5491829371e71160.hot-update.json": {
+      "name": "9e4e5491829371e71160.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/9e4e5491829371e71160.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/9e4e5491829371e71160.hot-update.json"
+    },
+    "app.25259ef3c99c513e8f0d.hot-update.js": {
+      "name": "app.25259ef3c99c513e8f0d.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.25259ef3c99c513e8f0d.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.25259ef3c99c513e8f0d.hot-update.js"
+    },
+    "25259ef3c99c513e8f0d.hot-update.json": {
+      "name": "25259ef3c99c513e8f0d.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/25259ef3c99c513e8f0d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/25259ef3c99c513e8f0d.hot-update.json"
+    },
+    "app.0b9e4bbf8f3eeaa8950a.hot-update.js": {
+      "name": "app.0b9e4bbf8f3eeaa8950a.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.0b9e4bbf8f3eeaa8950a.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.0b9e4bbf8f3eeaa8950a.hot-update.js"
+    },
+    "0b9e4bbf8f3eeaa8950a.hot-update.json": {
+      "name": "0b9e4bbf8f3eeaa8950a.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/0b9e4bbf8f3eeaa8950a.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/0b9e4bbf8f3eeaa8950a.hot-update.json"
+    },
+    "app.9042efad069c88ffcd7f.hot-update.js": {
+      "name": "app.9042efad069c88ffcd7f.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.9042efad069c88ffcd7f.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.9042efad069c88ffcd7f.hot-update.js"
+    },
+    "9042efad069c88ffcd7f.hot-update.json": {
+      "name": "9042efad069c88ffcd7f.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/9042efad069c88ffcd7f.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/9042efad069c88ffcd7f.hot-update.json"
+    },
+    "app.cefcf59de86c167f00b3.hot-update.js": {
+      "name": "app.cefcf59de86c167f00b3.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.cefcf59de86c167f00b3.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.cefcf59de86c167f00b3.hot-update.js"
+    },
+    "cefcf59de86c167f00b3.hot-update.json": {
+      "name": "cefcf59de86c167f00b3.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/cefcf59de86c167f00b3.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/cefcf59de86c167f00b3.hot-update.json"
+    },
+    "app.87ae2e5ef0fc40ec76b4.hot-update.js": {
+      "name": "app.87ae2e5ef0fc40ec76b4.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.87ae2e5ef0fc40ec76b4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.87ae2e5ef0fc40ec76b4.hot-update.js"
+    },
+    "87ae2e5ef0fc40ec76b4.hot-update.json": {
+      "name": "87ae2e5ef0fc40ec76b4.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/87ae2e5ef0fc40ec76b4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/87ae2e5ef0fc40ec76b4.hot-update.json"
+    },
+    "app.af1277b8a77f6a4f9ecf.hot-update.js": {
+      "name": "app.af1277b8a77f6a4f9ecf.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.af1277b8a77f6a4f9ecf.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.af1277b8a77f6a4f9ecf.hot-update.js"
+    },
+    "af1277b8a77f6a4f9ecf.hot-update.json": {
+      "name": "af1277b8a77f6a4f9ecf.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/af1277b8a77f6a4f9ecf.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/af1277b8a77f6a4f9ecf.hot-update.json"
+    },
+    "app.7e48f176e37fd34f357c.hot-update.js": {
+      "name": "app.7e48f176e37fd34f357c.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.7e48f176e37fd34f357c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.7e48f176e37fd34f357c.hot-update.js"
+    },
+    "7e48f176e37fd34f357c.hot-update.json": {
+      "name": "7e48f176e37fd34f357c.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/7e48f176e37fd34f357c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/7e48f176e37fd34f357c.hot-update.json"
+    },
+    "app.7a0f3cbba8e0d266b8ba.hot-update.js": {
+      "name": "app.7a0f3cbba8e0d266b8ba.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.7a0f3cbba8e0d266b8ba.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.7a0f3cbba8e0d266b8ba.hot-update.js"
+    },
+    "7a0f3cbba8e0d266b8ba.hot-update.json": {
+      "name": "7a0f3cbba8e0d266b8ba.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/7a0f3cbba8e0d266b8ba.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/7a0f3cbba8e0d266b8ba.hot-update.json"
+    },
+    "app.2553966eff05a0159643.hot-update.js": {
+      "name": "app.2553966eff05a0159643.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.2553966eff05a0159643.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.2553966eff05a0159643.hot-update.js"
+    },
+    "2553966eff05a0159643.hot-update.json": {
+      "name": "2553966eff05a0159643.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/2553966eff05a0159643.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/2553966eff05a0159643.hot-update.json"
+    },
+    "app.ef9aa4c00db9a06824be.hot-update.js": {
+      "name": "app.ef9aa4c00db9a06824be.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.ef9aa4c00db9a06824be.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.ef9aa4c00db9a06824be.hot-update.js"
+    },
+    "ef9aa4c00db9a06824be.hot-update.json": {
+      "name": "ef9aa4c00db9a06824be.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/ef9aa4c00db9a06824be.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/ef9aa4c00db9a06824be.hot-update.json"
+    },
+    "app.1d58966bf2295737b37e.hot-update.js": {
+      "name": "app.1d58966bf2295737b37e.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.1d58966bf2295737b37e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.1d58966bf2295737b37e.hot-update.js"
+    },
+    "1d58966bf2295737b37e.hot-update.json": {
+      "name": "1d58966bf2295737b37e.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/1d58966bf2295737b37e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/1d58966bf2295737b37e.hot-update.json"
+    },
+    "cf6d81d4a830883c2046.hot-update.json": {
+      "name": "cf6d81d4a830883c2046.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/cf6d81d4a830883c2046.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/cf6d81d4a830883c2046.hot-update.json"
+    },
+    "0dad5a2e6858ca41a855.hot-update.json": {
+      "name": "0dad5a2e6858ca41a855.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/0dad5a2e6858ca41a855.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/0dad5a2e6858ca41a855.hot-update.json"
+    },
+    "app.bff3f19cfb25a648b283.hot-update.js": {
+      "name": "app.bff3f19cfb25a648b283.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.bff3f19cfb25a648b283.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.bff3f19cfb25a648b283.hot-update.js"
+    },
+    "bff3f19cfb25a648b283.hot-update.json": {
+      "name": "bff3f19cfb25a648b283.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/bff3f19cfb25a648b283.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/bff3f19cfb25a648b283.hot-update.json"
+    },
+    "app.21dc7553f6dc402f80c9.hot-update.js": {
+      "name": "app.21dc7553f6dc402f80c9.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.21dc7553f6dc402f80c9.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.21dc7553f6dc402f80c9.hot-update.js"
+    },
+    "21dc7553f6dc402f80c9.hot-update.json": {
+      "name": "21dc7553f6dc402f80c9.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/21dc7553f6dc402f80c9.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/21dc7553f6dc402f80c9.hot-update.json"
+    },
+    "app.b5bdacf109fe4e4eca1c.hot-update.js": {
+      "name": "app.b5bdacf109fe4e4eca1c.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.b5bdacf109fe4e4eca1c.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.b5bdacf109fe4e4eca1c.hot-update.js"
+    },
+    "b5bdacf109fe4e4eca1c.hot-update.json": {
+      "name": "b5bdacf109fe4e4eca1c.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/b5bdacf109fe4e4eca1c.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/b5bdacf109fe4e4eca1c.hot-update.json"
+    },
+    "app.1d9d742c65f612b290cf.hot-update.js": {
+      "name": "app.1d9d742c65f612b290cf.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.1d9d742c65f612b290cf.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.1d9d742c65f612b290cf.hot-update.js"
+    },
+    "1d9d742c65f612b290cf.hot-update.json": {
+      "name": "1d9d742c65f612b290cf.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/1d9d742c65f612b290cf.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/1d9d742c65f612b290cf.hot-update.json"
+    },
+    "d9cf7f28cdec330122ee.hot-update.json": {
+      "name": "d9cf7f28cdec330122ee.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/d9cf7f28cdec330122ee.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/d9cf7f28cdec330122ee.hot-update.json"
+    },
+    "3c4a4f8407e1c9bbd1ef.hot-update.json": {
+      "name": "3c4a4f8407e1c9bbd1ef.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/3c4a4f8407e1c9bbd1ef.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/3c4a4f8407e1c9bbd1ef.hot-update.json"
+    },
+    "app.994a51cd41f7bdb320c4.hot-update.js": {
+      "name": "app.994a51cd41f7bdb320c4.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.994a51cd41f7bdb320c4.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.994a51cd41f7bdb320c4.hot-update.js"
+    },
+    "994a51cd41f7bdb320c4.hot-update.json": {
+      "name": "994a51cd41f7bdb320c4.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/994a51cd41f7bdb320c4.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/994a51cd41f7bdb320c4.hot-update.json"
+    },
+    "34a90ca3e4c33bb5567d.hot-update.json": {
+      "name": "34a90ca3e4c33bb5567d.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/34a90ca3e4c33bb5567d.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/34a90ca3e4c33bb5567d.hot-update.json"
+    },
+    "f04c8d806f8018a80d28.hot-update.json": {
+      "name": "f04c8d806f8018a80d28.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/f04c8d806f8018a80d28.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/f04c8d806f8018a80d28.hot-update.json"
+    },
+    "a9eba08c45cd5097f088.hot-update.json": {
+      "name": "a9eba08c45cd5097f088.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/a9eba08c45cd5097f088.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/a9eba08c45cd5097f088.hot-update.json"
+    },
+    "71414550cee9f85ad61b.hot-update.json": {
+      "name": "71414550cee9f85ad61b.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/71414550cee9f85ad61b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/71414550cee9f85ad61b.hot-update.json"
+    },
+    "a36d1d9b4aa0fd5d3f9b.hot-update.json": {
+      "name": "a36d1d9b4aa0fd5d3f9b.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/a36d1d9b4aa0fd5d3f9b.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/a36d1d9b4aa0fd5d3f9b.hot-update.json"
+    },
+    "0a366decdfc24a84a883.hot-update.json": {
+      "name": "0a366decdfc24a84a883.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/0a366decdfc24a84a883.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/0a366decdfc24a84a883.hot-update.json"
+    },
+    "app.44416d31e9de14bb9824.hot-update.js": {
+      "name": "app.44416d31e9de14bb9824.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.44416d31e9de14bb9824.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.44416d31e9de14bb9824.hot-update.js"
+    },
+    "44416d31e9de14bb9824.hot-update.json": {
+      "name": "44416d31e9de14bb9824.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/44416d31e9de14bb9824.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/44416d31e9de14bb9824.hot-update.json"
+    },
+    "app.7013765861d051ba106e.hot-update.js": {
+      "name": "app.7013765861d051ba106e.hot-update.js",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/app.7013765861d051ba106e.hot-update.js",
+      "publicPath": "http://0.0.0.0:8080/app.7013765861d051ba106e.hot-update.js"
+    },
+    "7013765861d051ba106e.hot-update.json": {
+      "name": "7013765861d051ba106e.hot-update.json",
+      "path": "/home/maxim/JustPython/WebChatPy/frontend/dist/7013765861d051ba106e.hot-update.json",
+      "publicPath": "http://0.0.0.0:8080/7013765861d051ba106e.hot-update.json"
+    }
+  },
+  "chunks": {
+    "app": [
+      "js/app.js",
+      "app.7013765861d051ba106e.hot-update.js"
+    ]
+  },
+  "publicPath": "http://0.0.0.0:8080/",
+  "error": "ModuleError",
+  "message": "Module Error (from ./node_modules/eslint-loader/index.js):\n\n/home/maxim/JustPython/WebChatPy/frontend/src/components/HelloWorld.vue\n  10:8  error  'axios' is defined but never used  no-unused-vars\n\n✖ 1 problem (1 error, 0 warnings)\n"
+}
