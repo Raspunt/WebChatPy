@@ -34,7 +34,7 @@
 
 
                 
-                <div data-toggle="modal" data-target="#exampleModal" type="button" >
+                <div class= "bg-danger" data-toggle="modal" data-target="#exampleModal" type="button" >
                     <p class="p-3"> <i type="button" class=" fas fa-plus" ></i>create chat </p>
                 </div>
                 
@@ -149,49 +149,34 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{% static 'Polls/js/PlusChat.js' %}"></script>
+
+
+
     <script>
 
+       
+
+        let loc = window.location
+
+        let wsStart = 'ws://'
+
+        if (loc.protocol =="https:"){
+            wsStart == 'wss://'
+        }
 
 
-        id_array = []
-        // setInterval(function() {
+        let endpoint = wsStart + loc.host + loc.pathname + "update/"
+
+        console.log(endpoint);
+
+        let socket = new WebSocket(endpoint)
+
+        socket.onmessage = (e)=>{
+            console.log(`message ${e}`);
+        }
+
         
-        //     $.getJSON('/messages', function(data) {    
-
-                
-        //         jsonMessages = data["messages"];
- 
-
-        //         for (i= 0 ;i< jsonMessages.length;++i){
-        //             // text = jsonMessages[i]["TEXT"] 
-        //             // username = jsonMessages[i]["USERNAME"]
-        //             // id = jsonMessages[i]["ID"]
-
-        //             console.log();
-
-        //             // if (!id_array.includes(id)){
-        //             //     id_array.push(id)
-        //             //     $('.chatPlace').append(`<h3 class = "message bg-secondary p-2 m-3">${username}: ${text} </h3>`)
     
-        //             // }
-
-
-        //         }
-            
-        //     });
-
-
-            
-
-        // },2000);
-
-
-        
-        
-
-
-
-
     </script>
 
 
