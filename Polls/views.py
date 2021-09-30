@@ -1,3 +1,4 @@
+from django.http.response import JsonResponse
 from django.shortcuts import redirect, render
 from . models import Chats,Messages
 from datetime import datetime
@@ -43,10 +44,6 @@ def StartPage(request):
         else:
             return redirect('/login')
 
-    
-        
-        if TitleChat != None:
-            Chats.objects.create(title=TitleChat,disc=DescChat)
 
 
 
@@ -57,7 +54,22 @@ def StartPage(request):
 
 
 
+def Get_Json(request):
+
+    messages = list(Messages.objects.values())
+    chats =  list(Chats.objects.values())
+
+    return JsonResponse(
+    {
+        "messages":messages,
+        'chats':chats,
+    },status =200)
+
+
+
+def vue_index(request):
     
+    return render(request,"Polls/vue_index.html")
 
 
 
