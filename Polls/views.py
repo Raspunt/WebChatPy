@@ -2,12 +2,27 @@ from django.shortcuts import redirect, render
 from . models import Chats,Messages
 from datetime import datetime
 from django.contrib import messages
+from channels.layers import get_channel_layer
+from asgiref.sync import async_to_sync
+from WebChat.consumers import ChatConsumer
 
 
 def StartPage(request):
 
     # получаем информацию из базы данных
     chats = Chats.objects.all()
+
+
+    channel_layer = get_channel_layer()
+    async_to_sync(channel_layer.group_send)(
+        'chat',
+        {
+            'type': 'chat.message',
+            'message': 'Test message'
+        }
+    )
+
+
 
     # проверяем это POST запрос
     if request.method == "POST":
@@ -53,13 +68,15 @@ def ChatsPage(request,chat_id):
         # получаем информацию из базы данных
         chat = Chats.objects.get(pk=chat_id) 
         chats = Chats.objects.all()
-
+    
         # берем сообшения(many to many) из чата
         chatMesages = chat.messages.all()
 
+     
+
         # проверяем это POST запрос
         if request.method == "POST":
-            
+
             #  получаем информацию из Post запроса
             message_text = request.POST.get("textInput")
             TitleChat = request.POST.get("TitleChat")

@@ -162,16 +162,18 @@
         if (loc.protocol =="https:"){
             wsStart == 'wss://'
         }
+        
+        
+        
+        let endpoint = wsStart + loc.host + loc.pathname + `ws/chat/`
 
 
-        let endpoint = wsStart + loc.host + loc.pathname + "update/"
-
-        console.log(endpoint);
-
+        
         let socket = new WebSocket(endpoint)
 
         socket.onmessage = (e)=>{
-            console.log(`message ${e}`);
+            let data = JSON.parse(e.data)
+            console.log(data);
         }
 
         
